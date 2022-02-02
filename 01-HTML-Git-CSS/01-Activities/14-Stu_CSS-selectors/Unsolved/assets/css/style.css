@@ -1,0 +1,34 @@
+
+/* Universal */
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+
+/* Element */
+body {
+  background-color: lemonchiffon;
+}
+/* Element */
+header,
+footer {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: #f0ead6;
+  background-color: #191970;
+}
+/* Element */
+figure {
+  width: 200px;
+  background-color: #f0ead6;
+}
+/* Class Class */
+.highlighted-text {
+  font-weight: bolder;
+}
+/* ID Tag */
+
+#contact-section {
+  background-color: #f0ead6;
+}
