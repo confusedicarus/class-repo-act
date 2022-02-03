@@ -17,7 +17,7 @@ header {
 /* 
 What happens when we set the display property to flex? 
 TODO: Write your answer here 
-*/
+flex container- items inside are allowed to flex. items will be place on the x axis*/
 nav {
   display: flex;
   background-color: #d8a47f;
@@ -33,6 +33,7 @@ nav a {
 /* 
 What is the flex-wrap property? 
 TODO: Write your answer here 
+allows for items to take up multiple lines without overflow
 */
 main {
   display: flex;
@@ -57,6 +58,7 @@ footer {
 /* 
 What does the justify-content property do? 
 TODO: Write your answer here 
+adjusts flex items along the main axis
 */
 .products {
   flex: 4;
@@ -71,6 +73,7 @@ TODO: Write your answer here
 What is the flex property a shorthand property for?
 What is it doing here? 
 TODO: Write your answer here 
+the flex property short hand is for the growth, shrink and basis of the flex item
 */
 .card {
   border-style: solid;
@@ -96,6 +99,7 @@ TODO: Write your answer here
 What does the flex-direction property define?
 What is it doing here? 
 TODO: Write your answer here 
+when the view port shinks to 768px the main and nav flex directions will change from the default row to colums.
 */
 @media screen and (max-width: 768px) {
   main,

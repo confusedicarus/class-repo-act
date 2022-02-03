@@ -1,7 +1,9 @@
+/* Universal Selector */
 * {
   box-sizing: border-box;
 }
 
+/* Element selector  */
 body {
   font-family: Arial;
   margin: 0;
@@ -15,6 +17,8 @@ header {
 }
 
 nav {
+  /* flexbox */
+  /* made a flex container */
   display: flex;
   background-color: #d8a47f;
 }
@@ -32,6 +36,7 @@ main {
 }
 
 aside {
+  /* flex-grow, flex-shrink, flex-basis */
   flex: 1;
   background-color: #b9c6ae;
   padding: 20px;
@@ -60,6 +65,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   /* Use flex-direction to stack the navbar, sidebar, and body */
+  /* grouping main & nav element */
   main,
   nav {
     flex-direction: column;
