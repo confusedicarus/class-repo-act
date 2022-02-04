@@ -99,6 +99,7 @@ footer {
   font-size: 150%;
 }
 
+
 .links a {
   color: #772014;
   text-decoration: none;
@@ -107,6 +108,28 @@ footer {
 .links a:hover {
   text-decoration: underline;
 }
+
+span[data-text] {
+  position: relative;
+  text-decoration: underline;
+  color: black;
+  cursor: grab;
+
+}
+
+span[data-text]:hover::after {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  background-color: darkblue;
+  border: 5px solid black;
+  font-size: 80%;
+  bottom: 30px;
+  left: 0px;
+  padding: 10px;
+
+}
+
 
 @media screen and (max-width: 768px) {
   header,

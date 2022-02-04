@@ -86,6 +86,8 @@ button {
 }
 
 /* What does this CSS rule do? */
+/* this rule sets the special image in the select element */
+/* -moz-appearance and -webkit-appearance (Vendor prekit) both are set to none and remove the default styling */
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -113,11 +115,13 @@ select:hover, button:hover {
 }
 
 /* What does this pseudo-class mean? */
+/* when focused right border width is shown with 5px */
 .text-input:focus {
   border-right-width: 5px;
 }
 
 /* What does this pseudo-class mean? */
+/* when no text is entered in the container te border is dashed */
 .text-input:placeholder-shown {
   border-style: dashed;
 }
@@ -137,12 +141,15 @@ select:hover, button:hover {
 }
 
 /* What does this selector do? */
+/* this changes the text next to the checkbox to the set color and italicizes the text */
 .checkbox:checked + label {
   color: #999999;
   font-style: italic;
 }
 
 /* What does this selector do? */
+/* this adds "thanks" to the text after the checkbox is set to true */
+/* + adds adjacent sibling */
 .checkbox:checked + label::after {
   margin-left: 10px;
   font-size: 90%;
