@@ -1,4 +1,47 @@
 :root {
     background-color: #515762;
     color: #E867EC;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.card {
+    
+    flex: auto;
+    box-sizing: border-box;
+    border: 5px #E867EC;
+    width: 50%;
+    border: dashed white 1px;
+    border-top-left-radius: 5px;
+
+}
+
+span {
+    display: block;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient( #da60df4d, #e866ec99)
+    
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h1 + p {
+    text-align: center;
+}
+
+h2 {
+    border: solid white 1px;
+}
+
+footer {
+    text-align: center;
 }
