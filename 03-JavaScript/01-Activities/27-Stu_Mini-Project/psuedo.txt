@@ -1,0 +1,38 @@
+rock/paper/scissor game
+window.prompt (r, p, or s)
+(computer's choice)
+window.alert results
+window.alert (results) [variables: stats: wins, losses, ties]
+window.comfirm (play again?)
+
+logic of the game
+user - r > s
+user - p > r
+user - s > p
+
+User Choice - first the user is promoted to choose R, P, S
+Computer Choice - computer needs to pick a random R, P, S
+
+[r,p,s]
+
+math.floor() , math.random() --methods value randomly
+
+var userChoice = prompt("Please choose R, P, S)
+computer choice
+
+alert computer choice
+alert win/loss/ties
+alert results
+
+as a user what are the clases where i win, lose, or ties
+&& ||
+
+how do i keep track of wins, loses, and tie - uses variables
+
+how do i increment based on wins/losses/ties
+wins++
+losses++
+ties++
+
+
+

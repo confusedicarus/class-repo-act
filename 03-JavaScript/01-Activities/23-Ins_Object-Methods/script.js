@@ -1,4 +1,7 @@
 // Objects can store more than primitive data types like strings, booleans and numbers
+//8 keys/values pairs
+//2 methods tellFunFact, showWarning
+//5 data types
 var planet = {
   name: "Earth",
   age: "4.543 billion years",

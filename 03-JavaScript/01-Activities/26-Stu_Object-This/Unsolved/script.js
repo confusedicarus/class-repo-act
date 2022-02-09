@@ -1,9 +1,14 @@
+
+//calls the window location
 console.log(this);
 
+//declares funciton helloThis
 function helloThis() {
   console.log('Inside this function, this is ' + this);
 }
+console.log(helloThis)
 
+//declared object
 var child = {
   age: 10,
   ageTenYears: function () {
