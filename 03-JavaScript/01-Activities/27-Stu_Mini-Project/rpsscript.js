@@ -1,70 +1,82 @@
+var userChoice = ["r", "p", "s"] 
 
-
-var userChoice = prompt("Please choose R, P, or S")
+var wins = 0
+var losses = 0
+var ties = 0
+var userChoice = prompt("Please choose r, p, or s");
 console.log(userChoice)
 
-window.alert(userChoice)
-console.log(gameStatus.game)
-// window.alert("You" + message + " !")
-
-var userChoice = {
-    userPick: ["r", "p", "s"],
-    
-
+var computerChoice = Math.random();
+if (computerChoice < 0.33) {
+    computerChoice = "r";
+} else if(computerChoice <= 0.66) {
+    computerChoice = "p";
+} else {
+    computerChoice = "s";
 }
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
+console.log(computerChoice)
+window.alert("Computer Chose " + computerChoice)
+
+function game () {
+ if (userChoice === computerChoice) {
+    message = " Tie";
+    ties++;
+} else if (userChoice === "r" && computerChoice === "p") {
+    message = " Loose";
+    losses++;
+} else if (userChoice === "r" && computerChoice === "s") {
+    message = " Win";
+    wins++;
+} else if (userChoice === "p" && computerChoice === "s") {
+    message = " Loose";
+    losses++ 
+} else if (userChoice === "p" && computerChoice === "r") {
+    message = " Win";
+    wins++;
+} else if (userChoice === "s" && computerChoice === "p") {
+    message = " Win";
+    wins++;
+} else if (userChoice === "s" && computerChoice === "r") {
+    message = " Loose";
+    losses++
+} else if (!message) {
+    window.alert("Invalid Entry, Plese try again")
+    game();
+} function playAgain() {
+    var playAgain = window.confirm("Would you like to play again?");
+    if (playAgain == false) {
+        window.alert("Thanks for playing");
+    } else if (playAgain == true) {
+        game() 
+} return playAgain()
 }
-console.log(getRandomInt(3));
+game()
+console.log(message)
+console.log(wins)
+console.log(losses)
+console.log(ties)
 
 
 
-function gameStatus() {
-    var game
-    if(getRandomInt(3) === userChoice.includes[1,2]) {
-        game = "loose"
-    } else {
-        game = "win"
-    }
-}
+window.alert("You" + message)
+window.alert("Wins: " + wins + " Losses: " + losses + " Ties: " + ties)
 
 
+// if (playAgain == true){
 
-// var gameStatus() {
-//   var message
-//     if(gameStatus === true) {
-//         message = "Win"
-//     } else {
-//         message = "Loose"
-//     }  
+// } else if (playAgain == false)  {
+
 // }
 
 
-// var computerChoice() {
-//     function getRandomInt() {
-//         return Math.floor(Math.random() *3)
-//     }
-// }
-
-
-
-// r = 1
-// p = 2
-// s = 3
-// var wins = 0;
-// var losses = 0;
-// var ties = 0;
 
 
 // window.alert("Hello Class!")
-
 // var whatDoYouLike = window.prompt("what do you like?")
-
 // //asking for user input
 // console.log(whatDoYouLike)
 
 
-// var likeDancee = window.confirm("Do you like to dance?")
-
+// var likeDance = window.confirm("Do you like to dance?")
 // //yes or no - return true or false
 // console.log(likeDancee)

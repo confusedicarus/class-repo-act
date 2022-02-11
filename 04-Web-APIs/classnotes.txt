@@ -1,0 +1,34 @@
+window.navigator
+
+Window Object
+-key -> value
+-key -> Object
+
+function() //functions must be followed up with ()
+
+--Console--
+geolocation:
+window.navigator.geolocation.getCurrentPosition(data => console.log(data))
+
+window.document.body //shows document body children
+
+find element -> take an action of that element
+find element -> store element in a var
+
+
+//Dot Notation is how we access values from keys in an Object
+console.log()
+console = object .log = method
+
+css = on page load
+js = user interaction
+
+
+09-ins_timer-interval
+function setTime(){
+
+}
+
+function sendMessage() {
+
+}

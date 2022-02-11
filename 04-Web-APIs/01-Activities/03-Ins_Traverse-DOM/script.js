@@ -11,6 +11,7 @@ console.log("First child of the ul: ")
 console.log(document.body.children[1].children[0]);
 
 // Accessing element by id
+//stores "first-child-ul"in the var firstChildUl
 var firstChildUl = document.getElementById("first-child-ul");
 
 // Setting style of element

@@ -1,4 +1,6 @@
 // Access multiple elements using .querySelectorAll()
+//getElementByID() -- select one element by ID
+//selects all Elements in the document body
  var divTags = document.querySelectorAll("div");
  var pTags = document.querySelectorAll("p");
  var imgEl = document.querySelectorAll("img");
