@@ -6,21 +6,19 @@ var countEl = document.querySelector("#count");
 function setCounterText() {
   countEl.textContent = count;
 }
-incrementEl.addEventListener("click", 
-function() {
+incrementEl.addEventListener("click", function () {
   count++;
-  setCounterText()
-})
+  setCounterText();
+});
 
-decrementEl.addEventListener("click",
-function() {
-  if (count > 0){
+decrementEl.addEventListener("click", function () {
+  if (count > 0) {
     --count;
-  setCounterText()
+    setCounterText();
   } else {
-    window.alert("Uhh you can't do that")
+    window.alert("Uhh you can't do that");
   }
-})
+});
 // TODO: Add event listener to increment button
 
-// TODO: Add event listener to decrement button 
+// TODO: Add event listener to decrement button

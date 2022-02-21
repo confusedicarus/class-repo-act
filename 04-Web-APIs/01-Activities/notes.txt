@@ -1,0 +1,58 @@
+// needs 2 arguments one of which is "click" the second being a defined function or undefined function (){}
+// example 04-activies-12-Stu_Event-Listener
+.addEventLister(,)
+
+//built in method parseFloat parses out string and returns a numberic value
+
+// 14-Stu
+function calculateTotal(total, tipAmount) {
+  return parseFloat(total) + parseFloat(tipAmount);
+}
+//parseInt changes user input from string to numberic value
+
+var key; //undeclared variable "key"
+
++= //adds to
+
+code: //which key is Pressed
+
+var textAreaEl = document.querySelector("#key")
+
+textAreaEl.addEventListener("keydown",function keydownAction(event) {
+  var key = event.key.toLowerCase();
+  var alphabetNumericCharacters = "abcdefghijklmnopqrstuvwxyz".split("");
+  if (alphabetNumericCharacters.includes(key)) {
+    for 
+  }
+})
+
+ //don't .innerHTML!!!! can be attacked easily with malicious code
+  document.querySelector("#status").innerHTML = "KEYUP Event"
+
+  event.stopPropagation(); //prevents bubbling in js
+
+  Event Delegation - assign an event handler to a parent and we delagate the event to a child
+  data- // data atrributes data-state; data-animate; data-state;
+
+  localStorage.setItem("name", "Ben")
+  localStorage.setItem()
+  localStorage.setItem()
+
+var user = [
+  name: "Ben";
+  age: 46; 
+  location: "Denver"
+];
+
+
+
+//setItem, getItem, removeItem, clear()
+//JSON-- Javescript object notation
+localStorage.setItem("user", JSON.stringify(user));
+console.log(users)
+
+.value allows to caputre user input
+
+//adds or removes from array
+//     from   how many
+.spice(index, value)

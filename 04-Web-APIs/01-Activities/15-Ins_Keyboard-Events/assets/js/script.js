@@ -8,22 +8,27 @@ var textAreaEl = document.querySelector('#textarea');
 
 var elements = [h1El, h2El, h3El, pEl];
 
+//undeclaired variable
 var typeface;
 
 // Change event
 typefaceEl.addEventListener('change', function (event) {
   event.preventDefault();
+  //finds #typeface from html and finds the .value from <options value="serif"> line 16
   typeface = typefaceEl.value;
   document.querySelector('.container').style.fontFamily = typeface;
 });
 
 // Keydown event
+//triggers on key stroke
 textAreaEl.addEventListener('keydown', function (event) {
   // Access value of pressed key with key property
   var key = event.key.toLowerCase();
   var alphabetNumericCharacters = 'abcdefghijklmnopqrstuvwxyz0123456789 '.split(
     ''
-  );
+  ); //.split array of substings
+
+  
   if (alphabetNumericCharacters.includes(key)) {
     for (var i = 0; i < elements.length; i++) {
       elements[i].textContent += event.key;

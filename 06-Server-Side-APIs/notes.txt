@@ -1,0 +1,76 @@
+//fake store ai
+
+//fetch API - fetch()
+
+//asynchronous operation - operations we have no idea how long it'll take
+//--("Hey JS, I want you to go get data, when the data comes back log it to the console")
+//returns an array of objects
+fetch("https://fakestoreapi.com/products") // <-- returns promised object
+    .then(fenction(response) {
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data)
+    });
+//Callback Function, Promise Objects, async/await
+
+//JS is a single threaded model - only process one line of code at a time
+
+//as developers we have no idea how long it's going to take to get that data back
+
+
+// . this is a method on all promise objects -- when the promise object enters a state of fufilled .then method will run . the promise object enters a state of rejected, .catch()
+
+var promise = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        reject();     
+    }, 3000;
+});
+
+promise
+    .then(function(){
+        console.log("we got data back!");
+    })
+    .catch(function(){
+        console.log("something went terribly wrong");
+    })
+//       add change
+// GET, POST, PUT, DELETE
+var requestUrl = 'https://api.github.com/orgs/Netflix/repos';
+// JQuery AJAX
+$.ajax({
+  url: requestUrl,
+  method: 'GET',
+}).then(function (response) {
+  console.log('AJAX Response \n-------------');
+  console.log(response);
+});
+
+//? allows to add parameters to URL targets
+// example: var requestUrl = "https://api.github.com/repos/twitter/Chill/issues?per_page=5";   <-- limits to 5
+//       ^parameters
+
+
+//.catch 
+fetch() {
+    .then(function (response) {
+        console.log(response);
+        if (response.status === 200) {
+            responseText.textContent = response.status;
+        }
+        return response.json();
+    });
+    .then(function(data) {
+        console.log(data);
+  })
+    .then(function () {
+    console.log("fetch is awesome");
+  });
+}
+
+// query parameters "per_page= " & "since=2020-06-01" 
+// to concat parameters use &
+fetch('https://api.github.com/gists/public?since=2020-06-01&per_page=100')
+
+
+//notes for tutor: help with 06-server-side mini project
