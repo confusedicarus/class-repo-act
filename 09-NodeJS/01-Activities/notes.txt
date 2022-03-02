@@ -1,0 +1,26 @@
+//function expression
+var createGreeting = function(message, name) {
+  return message + ", " + name + "!";
+};
+console.log(createGreeting("Hellow class", "my name is Rick"));
+
+// We can safely swap out function expressions with arrow functions most of the time
+//ES6(2015) - update to the JS language they included arrow functions, fat arrow function
+//1. An actual feature change to the language
+//2. Syntatical sugar 
+var createGreeting = (message, name) => {
+  return message + ", " + name + "!";
+};
+
+//if an arrow function only has one expression, we can omit the cury braces and auto return it.
+var createGreeting = (message, name) => message + "," + name + "!"
+
+console.log(createGreeting("Hello class", "my name is Rick"));
+
+//if an arrow function only has one parameter, we can omit the parens () around the single parameter
+var greet - greeting => console.log(greeting);
+
+
+lets and const can code block level scoped
+
+

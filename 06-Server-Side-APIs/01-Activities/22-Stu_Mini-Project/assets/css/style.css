@@ -1,5 +1,5 @@
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 h1,
@@ -8,6 +8,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
